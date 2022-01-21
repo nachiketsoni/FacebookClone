@@ -1,0 +1,38 @@
+<%  include ../views/partial/header %>
+
+  <link rel="stylesheet" href="../stylesheets/usernotfound.css">
+
+  <div id="main">
+    <img id="bg" src="../images/bg.jpg" alt="">
+    <div id="box">
+      <div id="lbox">
+        <h2>FACEBOOK PRESENTS:- <br><p id="dark" > DARK MODE</p></h2>
+        <img id="fb" src="../images/fb.png" alt="">
+      </div>
+      <div id="rbox">
+        <div id="loginc">
+          <p id="rboxfb">Facebook</p>
+          <form action="/login" method="post">
+            <p id="notfound" >user not found</p>
+            <input class="email" name="username" type="text" placeholder="Phone number, username or email">
+          <input class="email" name="password" type="password" placeholder="Password">
+          <input id="loginbtn" type="submit" value="Login">
+          </form>
+        </div>
+        <div id="forgot">
+          <p id="or">-----------------------  OR  -----------------------</p>
+          <a href=<%= /forgot/ %>>Forgot password?</a>
+        </div>
+        <div id="bboxc">
+          <div id="bbox">
+            <p id="noaccount" >Don't have an account? </p><a href="/signup"> Sign up</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <script src="../routes/index.js"></script>
+</body>
+</html>

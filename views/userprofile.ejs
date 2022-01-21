@@ -1,0 +1,58 @@
+<%  include ../views/partial/header %>
+   
+   <link rel="stylesheet" href="../stylesheets/2nd.css">
+
+    <style>
+      body{
+        background-color: black;
+      }
+        form{
+            margin-left: 25px;
+        }
+        h1{
+            margin-left: 25px;
+            color: white;
+        }
+        #submit{
+            border-radius: 5px;
+            outline: none;
+            background-color: cornflowerblue;
+            color: white;
+        }
+        #chat{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #nopost{
+            margin-top: 250px;
+            margin-left: 250px;
+        }
+        .card{
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-color: #000;
+          background-clip: border-box;
+          border: 1px solid rgba(0,0,0,.125);
+          border-radius: 0.25rem;
+          color: white;
+        }
+    </style>
+    <h1>Hey <%=  %> !</h1>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+        <div class="card" style="width: 18rem;">
+            <img style="border-radius: 50px; width: 6rem;height: 6rem;" src="<%= data.profilepic %>" class="card-img-top" alt="..">
+            <input class="btn btn" type="file" name="image">
+            <input class="btn btn-success" type="submit">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    </form>
+</body>
+</html>

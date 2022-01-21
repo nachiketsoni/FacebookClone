@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(46, 46, 43); */
+}
+#bg{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+#box{
+  height: 80%;
+  width: 60%;
+  display: flex;
+  /* background-color: rgb(116, 116, 75); */
+}
+#lbox{
+  color: #000000;
+  font-family: monospace;
+  font-size: 15px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(53, 53, 45); */
+}
+#dark{
+  font-family: sans-serif;
+  font-size: 25px;
+}
+#rbox{
+  height: 100%;
+  width: 50%;
+  border: solid 2px rgb(206, 192, 192);
+  background-color: rgb(0, 0, 0);
+}
+#fb{
+  height: 70%;
+  width: 90%;
+  /* border-radius: 25px; */
+}
+#loginc{
+  height: 60%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(179, 157, 153); */
+}
+.email{
+  font-size: 15px;
+  margin-top: 10px;
+  width: 300px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1px #DBDBDB;
+  padding: 10px;
+  outline: none;
+}
+.email:focus::placeholder{
+  color: transparent;
+}
+.email::placeholder{
+  color: #222;
+  transition: color 0.3s ease;
+}
+#rboxfb{
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: grey qo;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* background-color: yellow; */
+}
+#loginbtn{
+  margin-top: 20px;
+  width: 300px;
+  height: 37px;
+  border-radius: 3px;
+  border: solid 1px #DBDBDB;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(182, 154, 209);
+}
+#loginbtn:hover{
+  background-color: blueviolet;
+  cursor: pointer;
+}
+#loginbtn a{
+  color: white;
+  text-decoration: none;
+}
+#or{
+  margin-top: 10px;
+  color: rgb(184, 184, 184);
+  margin-bottom: 10px;
+}
+#forgot{
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#forgot a{
+  text-decoration: none;
+}
+#bboxc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  /* background-color: brown; */
+}
+#bbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  width: 80%;
+  border: solid 2px white;
+  color: white;
+  background-color: rgb(26, 23, 23);
+}
+form{
+  margin-left: 60px;
+}

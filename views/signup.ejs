@@ -1,0 +1,24 @@
+<%  include ../views/partial/header %>
+
+    <link rel="stylesheet" href="../stylesheets/signup.css">
+
+    <div id="main">
+        <img id="img" src="../images/signup.jpg" alt="">
+        
+        <form id="form" action="/register" method="post">
+            <h1>Facebook</h1>
+            <h2 id="gmail">log in with @gmail</h2>
+            <h3> <div class="line"></div> OR <div class="line"></div> </h3>
+            <div id="first">
+                <input required name="fullname" type="text" placeholder="Full Name"><br>
+                <input required name="username" type="text" placeholder="Username"><br>
+                <input required name="number" type="number" placeholder="Mobile Number"><br>
+                <input required name="email" type="email" placeholder="email"><br>
+                <input required name="password" type="password" placeholder="Password">
+            </div>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+    
+</body>
+</html>

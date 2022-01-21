@@ -1,0 +1,27 @@
+<%  include ../views/partial/header %>
+
+<link rel="stylesheet" href="../stylesheets/forgot.css">
+
+    <div id="main">
+        <img id="bg" src="../images/forgotbg.jpg" alt="">
+        <div id="box">
+            <div id="head">
+                Find Your Account
+            </div>
+            <div id="mid">
+                <form action="/forgot" method="post">
+                <h1>Please enter your email address to reset your password :-</h1>
+                    <label class="label">
+                        <input name="email" class="input" type="email">
+                    </label>
+                </div>
+                <div id="bottom">
+                        <a id="btn2" style="text-decoration: none;color: black;" href="/">Cancel</a>
+                        <button id="btn1" >Send mail</button>
+                    </form>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>
